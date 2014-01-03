@@ -1,19 +1,8 @@
 {
     "name": "tease/tease",
-    "description": "A tool that tests if logs are getting written correctly",
-    "authors": [
-        {
-            "name": "JT Paasch",
-            "email": "jt.paasch@gmail.com"
-        }
-    ],
-    "minimum-stability": "dev",
     "autoload": {
         "psr-0": {
             "Tease\\Tease" : "src"
         }
-    },
-    "require": {
-
     }
 }
