@@ -1,5 +1,5 @@
 {
-    "name": "jpaasch/tease",
+    "name": "tease/tease",
     "description": "A tool that tests if logs are getting written correctly",
     "authors": [
         {
@@ -8,6 +8,11 @@
         }
     ],
     "minimum-stability": "dev",
+    "autoload": {
+        "psr-0": {
+            "Tease\\Tease" : "src"
+        }
+    },
     "require": {
 
     }
