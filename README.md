@@ -1,5 +1,5 @@
 Tease
 =====
 
-A tool that tests if logs are getting written.
+A tool that reads and parses log entries..
 
