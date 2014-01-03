@@ -2,7 +2,7 @@
     "name": "jpaasch/tease",
     "autoload": {
         "psr-0": {
-            "Tease\\Tease" : "src"
+            "Tease" : "src"
         }
     }
 }
