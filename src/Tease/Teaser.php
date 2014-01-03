@@ -5,7 +5,7 @@
  *  See the LICENSE distributed with this source code.
  */
 
-namespace Teaser;
+namespace Tease;
 
 /**
  *  This class makes http requests and then
