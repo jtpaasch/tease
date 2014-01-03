@@ -1,3 +1,14 @@
 {
-    "name": "jpaasch/tease"
+    "name": "jpaasch/tease",
+    "description": "A tool that tests if logs are getting written correctly",
+    "authors": [
+        {
+            "name": "JT Paasch",
+            "email": "jt.paasch@gmail.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {
+
+    }
 }
