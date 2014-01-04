@@ -8,7 +8,9 @@
 namespace Tease;
 
 use Tease\Parser\ParserInterface;
+use Tease\Parser\Csv as Parser;
 use Tease\Streamer\StreamerInterface;
+use Tease\Streamer\File as Streamer;
 
 /**
  *  This class reads log entries, parses them,
@@ -31,6 +33,32 @@ class Teaser {
      *  @var StreamerInterface
      */
     private $streamer;
+
+    /**
+     *  The constructor.
+     *  
+     *  If the path to a log file is specified, 
+     *  a default file streamer and CSV parser will be set.
+     *
+     *  @access public
+     *  @param String $path The path to a log file.
+     */
+    public function __construct($path = null) {
+
+        // Was a path to a log file specified?
+        if (!is_null($path)) {
+
+            // Choose the default streamer.
+            $streamer = new Streamer($path);
+            $this->set_streamer($streamer);
+
+            // Choose the default parser.
+            $parser = new Parser();
+            $this->set_parser($parser);
+
+        }
+
+    }
 
     /**
      *  Set a parser that can parse log files.
@@ -79,7 +107,7 @@ class Teaser {
      *  @param Integer $entries The number of entries to read/parse.
      *  @return Array of Arrays The parsed log data.
      */
-    public function read_log($entries = 1) {
+    public function fetch($entries = 1) {
 
         // Use the streamer to read the specified 
         // number of entries.
