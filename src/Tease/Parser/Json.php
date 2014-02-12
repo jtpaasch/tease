@@ -30,7 +30,7 @@ class Json implements ParserInterface {
         // First, break the string into lines. 
         $lines = preg_split('@\n|\r\n|\r@', $source);
 
-        // Now go thtrough each line.
+        // Now go through each line.
         foreach ($lines as $line) {
 
             // Parse the json line.
